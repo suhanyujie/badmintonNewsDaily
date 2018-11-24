@@ -1,0 +1,29 @@
+{
+  "name": "badmintonnewsdaily",
+  "version": "1.0.0",
+  "description": "* 羽毛球每日快讯",
+  "main": "index.js",
+  "bin": {
+    "badmintonnewsdaily": "./bin/spider.js"
+  },
+  "scripts": {
+    "test": "badmintonnewsdaily && exit 1",
+    "testa": "badmintonnewsdaily"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suhanyujie/badmintonNewsDaily.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suhanyujie/badmintonNewsDaily/issues"
+  },
+  "homepage": "https://github.com/suhanyujie/badmintonNewsDaily#readme",
+  "dependencies": {
+    "bufferhelper": "^0.2.1",
+    "cheerio": "^1.0.0-rc.2",
+    "http": "0.0.0",
+    "iconv-lite": "^0.4.24"
+  }
+}

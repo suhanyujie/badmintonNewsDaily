@@ -22,7 +22,7 @@
 <div class="so">
 <form name="formsearch" action="search.php">
 <input name="keyword" id="keyword" type="text" style="color:#999;" size="20" value="输入要找的内容..." onfocus="if(this.value=='输入要找的内容...'){this.value='';}" />
-<input type="submit" value="SERACH" class="button2" onclick="subs();">
+<input type="submit" value="SERACH" class="button2" onclick="subs();"/>
 </form>
 </div>
 </div>
@@ -60,7 +60,7 @@
 </div>
 </div>
 <div class="main">
-<div id="cboas_85" style="margin-bottom:5px;"><cboa id="cboa_85"></div><div class="spacer"></div>
+<div id="cboas_85" style="margin-bottom:5px;"></div><div class="spacer"></div>
 <div class="box">
 <div class="left-box">
 <div class="index-pic">
@@ -130,7 +130,7 @@ elastic:true
 <a href="view-21310-1.html" target="_blank">李宗伟患癌发声:感谢球迷关心</a>北京时间9月22日，针对大马一哥李宗伟的病情，马来西亚羽毛球协会发表官方申明，确…</div>
 <div class="list-2-top"><div class="list-2-pic"><a href="view-20783-1.html" target="_blank"><img src="/uploads/image/2018/20180527111149_mQiuc.jpg" width="100" height="75" alt="不卖惨! 李雪芮:职业生涯最差1场 我技不如人"></a></div>
 <a href="view-20783-1.html" target="_blank">不卖惨! 李雪芮:职业生涯最差1场</a>2018年尤伯杯羽毛球赛对中国女单来说是一场噩梦，三场单打全部失利，总比分2-3…</div>
-<div id="cboas_89"><cboa id="cboa_89" style="margin-bottom:10px;"></div><div class="spacer"></div>
+<div id="cboas_89"></div><div class="spacer"></div>
 <a href="view-21550-1.html" target="_blank">林丹：2018非常不理想 未来再难也要拼东京奥运</a><br />
 <a href="view-21548-1.html" target="_blank">揭秘戴资颖六大独门绝技 每招都让对手招架不住</a><br />
 <a href="view-21547-1.html" target="_blank">小黄人组合本赛季名副其“10” 决赛胜率史上罕见</a><br />
@@ -175,7 +175,7 @@ elastic:true
 <div class="list-1-bot list_top_compart"><a style="color:green" href="//bbs.badmintoncn.com/forum-62-1.html" target="_blank"><b>培训/招商/推广</b></a> <a style="COLOR: #ff00ff" href="//bbs.badmintoncn.com/forum-64-1.html" target=_blank><b>二手交易</b></a> <a style="color: blue" href="//bbs.badmintoncn.com/forum-35-1.html" target="_blank">商家优惠 快去淘宝贝</a> <a style="color:red" href="//bbs.badmintoncn.com/thread-340183-1-1.html" target="_blank"><b>中羽在线APP</b></a></div>
 </div>
 <div class="right-box">
-<div id="cboas_88" style="margin-bottom:1px;"><cboa id="cboa_88"></div>
+<div id="cboas_88" style="margin-bottom:1px;"></div>
 <div class="title-3"><span><a href="/view-20405-1.html" target="_blank">2018年国际赛程</a></span><a href="/s" target="_blank" title="更多">近期专题/活动</a></div>
 <div class="list-3-1">
 <ul>
@@ -316,25 +316,8 @@ elastic:true
 </div>
 <div class="spacer"></div>
 </div>
-<script type="text/javascript">
 
-function selectContent(showContent,obj){
-var tag = document.getElementById("index-froum").getElementsByTagName("a");
-var taglength = tag.length;
-for(i=0; i<taglength; i++){
-tag[i].className = "a";
-}
-obj.className = "now";
-
-for(j=0; j<4;j++){
-document.getElementById("tagContent"+j).style.display = "none";
-
-}
-document.getElementById(showContent).style.display = "block";
-
-}
-</script>
-<div id="cboas_86" style="margin-bottom:7px;"><cboa id="cboa_86"></div><div class="spacer"></div>
+<div id="cboas_86" style="margin-bottom:7px;"></div><div class="spacer"></div>
 <div class="box">
 <div class="left-box">
 <div class="title-3"><span><a href="/cbo_user/user.php?in=gym&amp;action=add" target="_blank">登记</a></span><a href="/cbo_gym/index.php" target="_blank">球馆库</a></div>
@@ -377,7 +360,7 @@ document.getElementById(showContent).style.display = "block";
 <div class="box">
 <div class="left-box">
 <div class="title-3"><span><a href="/cbo_user/user.php?in=bbsad&amp;action=Buy&amp;aid=38" target="_blank">购买自助广告位</a></span>广告展示</div>
-<div class="list-1-1"><div id="cboas_38" style="margin-top:10px;"><cboa id="cboa_38"></div></div>
+<div class="list-1-1"><div id="cboas_38" style="margin-top:10px;"></div></div>
 </div>
 <div class="center-box">
 <div class="title-3"><a href="/cbo_star/index.php" target="_blank">一周人气球星</a></div>
@@ -474,98 +457,16 @@ document.getElementById(showContent).style.display = "block";
 Copyright &copy; badmintoncn.com 中羽在线 版权所有 闽ICP备05000173号 <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35020302000857" style="color:#999999"><img src="/cbo_news/style/img/beian.png" align="absmiddle" />闽公网安备35020302000857号</a><br />
 中羽在线合作/建议/信箱：market(a)badmintoncn.com
 </div>
-<style>
-#bottomad_big {
-WIDTH: 100%;
-background: rgba(0,0,0,.75); 
-text-align:center;
-display:block;
-overflow:hidden;
-z-index:2000;
-margin:0 auto;
-FLOAT: right; 
-RIGHT: 0px; 
-BOTTOM: 0px;
-POSITION:fixed;/*固定定位*/
-_POSITION: absolute;/*兼容IE6*/
-_TOP: expression(offsetParent.scrollTop+document.documentElement.clientHeight-this.offsetHeight);/*兼容IE6*/
-}
 
-.bottom_ad_body{width:870px;margin:0 auto;text-align:center;}
-.bottom_ad_close{float:right }
-</style>
 <div id="bottomad_big" style="display:none;">
 <span onClick="toggle()" class="bottom_ad_close"><img src="http://bbs.badmintoncn.com/cbo/close2.png" id="close_img" alt="关闭" width="40"></span>
-<div id="cboas_90" class="bottom_ad_body"><cboa id="cboa_90"></div>
+<div id="cboas_90" class="bottom_ad_body"></div>
 </div>
-<script type="text/javascript">
-var bottomad_big = document.getElementById('bottomad_big').style;
-var week = new Date().getDay();  
-//if(week == 0 || week == 5 || week == 6){ 
 
-//if(!navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
-log_bbsa();
-//}
-//}
-
-function toggle() {
-if ( bottomad_big.display == "none" ){
-setCookieAd("bbsbottomcookie","yes","h0") ;
-bottomad_big.display = "block"; 
-}else{
-setCookieAd("bbsbottomcookie","yes","h24") ;
-bottomad_big.display = "none";
-}
-}
-
-function log_bbsa(){
-
-if (getCookieAd('bbsbottomcookie')=='yes'){   
-bottomad_big.display = "none";
-}else{
-bottomad_big.display = "block";	
-}
-
-
-}
-
-function getCookieAd(name){
-var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
-if(arr=document.cookie.match(reg)) return unescape(arr[2]);
-else return null;
-}
-
-function setCookieAd(name,value,time){
-var strsec = getsecad(time);
-var exp = new Date();
-exp.setTime(exp.getTime() + strsec*1);
-document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
-}
-
-function getsecad(str){
-var str1=str.substring(1,str.length)*1; 
-var str2=str.substring(0,1); 
-if (str2=="s"){
-return str1*1000;
-}else if (str2=="h"){
-return str1*60*60*1000;
-}else if (str2=="d"){
-return str1*24*60*60*1000;
-}
-}
-</script>
 <div style="DISPLAY: none">
 <script language=javascript src="/cbo_include/cbo_top.php?action=userLogin"></script>
-<script src="/cbo_include/js/cboaaa.js" type="text/javascript">
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?cfc948fc40dd345b6e12298c5c40ba13";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+<script src="/cbo_include/js/cboaaa.js" type="text/javascript"></script>
+
 </div>
 </div>
 </div>

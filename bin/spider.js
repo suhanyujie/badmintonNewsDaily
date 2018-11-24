@@ -36,8 +36,6 @@ function main() {
             var tmpLink='';
             // 这里 index为索引
             liArr.map((index,item) => {
-                // 获取期数
-                //let period = tmpTotalTr.eq(index).find('td').eq(0).find('.p').text();
                 //获得标题
                 tmpLink = $(item).find('a').attr('href')
                 if (tmpLink) {

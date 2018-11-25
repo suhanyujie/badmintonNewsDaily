@@ -20,3 +20,7 @@
 ### 编码问题
 * nodejs中编码问题 参考 http://www.9958.pw/post/nodejs_gbk
 
+
+## 参考资料
+* 官方文档 http://nodejs.cn/api/fs.html#fs_file_system_flags
+

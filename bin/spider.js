@@ -63,6 +63,7 @@ function main(resolve) {
     post_req.end();
 }
 
+//创建文件
 function createFile(resolve) {
     var dateObj = new Date()
     var year = dateObj.getFullYear(),

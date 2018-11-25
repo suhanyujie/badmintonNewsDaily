@@ -6,6 +6,8 @@
 * composer require voku/simple_html_dom
 * composer require voku/portable-utf8 # if you need e.g. UTF-8 fixed output
 
+### 权限
+* 给storage文件夹可写权限，`chmod -R 777 storage`，因为storage中需要存储数据
  
 
 ### 短网址服务

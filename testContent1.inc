@@ -53,7 +53,7 @@
 <a href="/cbo_shop" target="_blank">商店</a>
 <td class="bgn">
 <a href="/e/" target="_blank">测评室</a><br />
-<a href="/s/" target="_blank">活动区</a></td>
+<a href="/s/" target="_blank">活动区</a> </td>
 </td>
 </tr>
 </table>

@@ -21,6 +21,18 @@ class Spider
      */
     public function getBigNews($url='',$html='')
     {
+        $url = 'http://www.badmintoncn.com/';
+        $range = '.left-box-1 list-2';
+        $rules = [
+            'title' => ['a', 'text'],
+        ];
+        $rt = QueryList::get($url)->rules($rules)
+            ->range($range)->query()->getData();
+        var_dump($url,$rt->all());exit(PHP_EOL.'下午6:30'.PHP_EOL);
+
+
+
+
         try{
             $file = 'testContent1.inc';
             $dom = HtmlDomParser::str_get_html($html);

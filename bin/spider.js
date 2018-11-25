@@ -7,15 +7,12 @@ let http = require("http"),
 const fs = require('fs'),
     path = require('path');
 
-
-createFile();
 new Promise(function(resolve,reject){
     main(resolve)
 }).then(function (value) {
-    var len = value.length
-    return len
-}).then(function (value) {
-    console.log(value);
+    var fileName = createFile()
+    var res = fs.writeFileSync(fileName, JSON.stringify(value))
+    console.log(res);
 });
 
 
@@ -66,19 +63,24 @@ function main(resolve) {
     post_req.end();
 }
 
-function createFile() {
+function createFile(resolve) {
     var dateObj = new Date()
     var year = dateObj.getFullYear(),
         month = dateObj.getMonth()+1,
         day = dateObj.getDate();
-    var filePath = "/../storage/data/"+year+'/'+month+'/'+day
+    var filePath = "/../storage/data/"+year+'/'+month;
     filePath = __dirname+filePath
     var isExist = fs.existsSync(filePath)
     if (!isExist) {
-        return mkdirsSync(filePath)
-    } else {
-        return true;
+        if (!mkdirsSync(filePath)) {
+            return false;
+        }
     }
+    var fileName = `${filePath}/${year}-${month}-${day}.json`
+    var res = fs.openSync(fileName,'w')
+    fs.closeSync(res)
+
+    return fileName;
 }
 
 // 递归创建目录 同步方法

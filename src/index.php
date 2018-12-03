@@ -48,6 +48,7 @@ $html3 = file_get_contents('testContent1.inc');
 
 
 
-$res = $spider->getBigNews($newsUrl,$html3);
+//$res = $spider->getBigNews($newsUrl,$html3);
+$res = $spider->test1();
 //$res = $spider->sendToDingtalk();
 var_dump($res);exit(PHP_EOL.'下午5:44'.PHP_EOL);

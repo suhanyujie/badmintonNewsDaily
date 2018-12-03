@@ -120,4 +120,49 @@ MSG1;
 
         return $response;
     }
+
+
+    /**
+     * @desc
+     */
+    public function test1()
+    {
+        $gUrl = 'http://www.badmintoncn.com/';
+        for($i=188;$i<1800;$i++){
+            $tmpp = ($i-1)*100;
+            $str = "$tmpp,100";
+//            $res = $db -> query([""],"",$str,"");
+            $res = [
+                'id'=>1,
+                'url'=>''
+            ];
+            for($i=0;$i<100;$i++){
+                $data = [];
+                $tmp = QueryList::get($gUrl)->encoding('UTF-8','GB2312');
+                $data['location'] = $tmp->find("#Label18")->text();
+                $data['num'] = $tmp ->find("#Label16")->text();
+                $data['date'] = $tmp ->find("#Label24")->text();
+                $data['price'] = $tmp ->find("#Label23")->text();
+                $data['company_b'] = $tmp ->find("#Label19")->text();
+                $data['company_a'] = $tmp ->find("#Label21")->text();
+                $data['type'] = $tmp ->find("#Label17")->text();
+                $data['area'] = $tmp ->find("#Label22")->text();
+                $tmp = null;
+                $data = null;
+            }
+            $size = memory_get_usage();
+            echo $this->convert($size).PHP_EOL;
+            sleep(1);
+            $tmpp = null;
+            $str = null;
+            $res = null;
+            echo 'page: '.$i."\r\n";
+        }
+    }
+
+    public function convert($size)
+    {
+        $unit=array('b','kb','mb','gb','tb','pb');
+        return @round($size/pow(1024,($i=floor(log($size,1024)))),2).' '.$unit[$i];
+    }
 }
